@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <script type="text/javascript" src="./js/carousel.js"></script>
+    <title>Red 18 Casino</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+      <div class="nav">
+        <a href="#news">News</a>
+        <a href="#works">How It Works</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+      <div class="logo"><img src="./img/banner.jpg"/></div>
+      <div class="container-text">
+        <div class="format">
+          <h2 class="aboutus">What we do</h2>
+          <p class="wwd">Whether it's a charity night, corporate event or just for something different, we are the team for you. Red 18 Fun Casino, pride themselves on quality and providing a night you'll never forget. We have professionally trained croupiers with over 50 years' experience between them and the charm to match. So you can rest assured that you will get an authentic experience. We make casinos fun and winning easy, all you have to do is turn up. </p>
+        </div>
+        <div class="format">
+          <h2 class="games">Games we offer</h2>
+          <p>We offer a wide range of classic casino games, as well as the addictive horse racing game.</p>
+          <ul>
+            <li>Blackjack</li>
+            <li>Caribbean Stud Poker</li>
+            <li>Horse Racing</li>
+            <li>Roulette</li>
+            <li>Texas Hold'em</li>
+          </ul>
+        </div>
+        <div class="format">
+          <h2 id="works">How It Works</h2>
+          <p>Each player starts with £5,000 worth of chips, these are then exchanged at any of the tables they wish to play at. If they lose it all they can buy some more, if they win, then they just keep playing. At the end of the night you can either have an auction for those with some winnings, or prizes for those who have won the most.</p><br>
+          <h3>Auctions</h3>
+          <p>If you decide to go for an auction, then all youn need are some prizes to auction off. Don't worry about the auctioner, we will take care of that. Each prize then has an opening bid, those that have won enough bid with the chips they've won, just as though it was real money. The aution is a great way to finish the night and always provides added entertainment.</p>
+          <!-- <h1 class="tag">Casinos made fun, winning made easy!</h1> -->
+        </div>
+        <div class="format">
+          <h2 id="news">Latest News</h2>
+          <h3>Colne Football Club</h3>
+          <p>Another successful night at Colne Football Club. With over £500 raised for charity. Looking forward to next year already. </p>
+          <div class="carousel-container">
+            <div  class="carousel-item fade slides1">
+              <img src="./img/photo12.jpg"/>
+              <div class="carousel-item-caption"></div>
+            </div>
+            <div  class="carousel-item fade slides1">
+              <img src="./img/photo13.jpg"/>
+              <div class="carousel-item-caption"></div>
+            </div>
+            <div  class="carousel-item fade slides1">
+              <img src="./img/photo14.jpg"/>
+              <div class="carousel-item-caption"></div>
+            </div>
+            <a class="carousel-control-left" onclick="changeSlide(-1, 0)">&#10094;</a>
+            <a class="carousel-control-right" onclick="changeSlide(1, 0)">&#10095;</a>
+          </div>
+          <h3>Princess Royal</h3>
+          <p>Excellent night at the Princess Royal, all for an excellent cause! Great crowd and plenty raised for the Georgia Fourie Butterfly Fund</p>
+          <div class="carousel-container">
+            <div  class="carousel-item fade slides2">
+              <img src="./img/photo8.jpg"/>
+              <div class="carousel-item-caption"></div>
+            </div>
+            <div  class="carousel-item fade slides2">
+              <img src="./img/photo9.jpg"/>
+              <div class="carousel-item-caption"></div>
+            </div>
+            <div  class="carousel-item fade slides2">
+              <img src="./img/photo3.jpg"/>
+              <div class="carousel-item-caption"></div>
+            </div>
+            <a class="carousel-control-left" onclick="changeSlide(-1, 1)">&#10094;</a>
+            <a class="carousel-control-right" onclick="changeSlide(1, 1)">&#10095;</a>
+          </div>
+        </div>
+        <div class="format">
+          <h2 id="contact">Contact Us</h2>
+          <p>Have a question or want more information? Contact us <a href="mailto:davidcraig06@hotmail.co.uk" target="_blank">davidcraig06@hotmail.co.uk</a></p>
+          <a class="fb" href="https://www.facebook.com/Red18FunCasino/" target="_blank"><img src="./img/fb.svg"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+  var slideIndex = [1, 1];
+  var slideId = ["slides1", "slides2"]
+  showSlides(1, 0);
+  showSlides(1, 1);
+  setTimeout(showSlides, 2000, 1, 0);
+
+  </script>
+</html>

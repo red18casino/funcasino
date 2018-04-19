@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:700');
+
+.carousel-container {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  padding: 10px 0 20px 0;
+}
+
+.carousel-item img {
+  height: 100%;
+  margin: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.carousel-item {
+  display: none;
+  height: 300px;
+  width: 100%;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+.carousel-control-left, .carousel-control-right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 26px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.carousel-control-right {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.carousel-control-left:hover, .carousel-control-right:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  position: relative;
+}
+.container-text{
+  padding: 20px;
+}
+
+.nav{
+  height: 50px;
+  background-color: #c63934;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 60%;
+  top: 0;
+  z-index: 1;
+}
+
+.nav a{
+  display: inline-block;
+  color: white;
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  font-family: Montserrat;
+  flex: 1;
+  text-align: center;
+  }
+
+.nav a:hover{
+    background-color: #dd403a;
+  }
+
+.fb img {
+  width: 50px;
+  padding-top: 10px;
+}
+
+.format {
+  padding-bottom: 20px;
+}
+
+ul{
+  padding-top: 5px;
+  list-style: disc;
+  color: #444;
+  font-family: "Lato"
+    }
+
+ul li{
+  margin-left: 25px;
+  line-height: 1.4em;
+  }
+
+h2 {
+  font-family: Montserrat;
+  padding: 20px 0 10px 0;
+  color: #c63934;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: Montserrat;
+  padding: 15px 0 10px 0;
+  color: #dd403a;
+}
+
+p {
+  font-family: "Lato";
+  line-height: 1.6em;
+  letter-spacing: 0.3px;
+  color: #444;
+}
+
+.background {
+  background: #312845; /* Old browsers */
+  background: -moz-linear-gradient(top, #312845 0%, #344d8d 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #312845 0%,#344d8d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #312845 0%,#344d8d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#312845', endColorstr='#344d8d',GradientType=0 );
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+body{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#312845+0,344d8d+100 */
+
+  /* IE6-9 */
+  /* background: url("../img/vegas.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh */
+}
+/*
+.format img {
+  width: 100%;
+  margin: auto;
+  padding: 10px 0 10px 0;
+  display: block;
+} */
+.logo{
+  padding: 70px 20px 0px 20px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.tag{
+  color: black;
+  font-family: "Indie Flower";
+}
+
+/* gallery */
+.container-gallery {
+  width: 60%;
+  margin: auto;
+  background-color: #f2f2f2;
+  border-radius: 5px
+}
+
+ /* Contact page  */
+ input, select, textarea {
+     width: 100%; /* Full width */
+     padding: 12px; /* Some padding */
+     border: 1px solid #ccc; /* Gray border */
+     border-radius: 4px; /* Rounded borders */
+     box-sizing: border-box; /* Make sure that padding and width stays in place */
+     margin-top: 6px; /* Add a top margin */
+     margin-bottom: 16px; /* Bottom margin */
+     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+ }
+
+ input[type=submit] {
+     background-color: #4CAF50;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+ }
+
+ input[type=submit]:hover {
+     background-color: #45a049;
+ }
+
+@media only screen and (max-width: 800px) {
+  .container{
+    width: 100%;
+  }
+}
