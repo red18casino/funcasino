@@ -64,7 +64,6 @@
   width: 60%;
   margin: auto;
   background-color: #f2f2f2;
-  border-radius: 5px;
   position: relative;
 }
 .container-text{
@@ -215,7 +214,7 @@ body{
 
 @media only screen and (max-width: 800px) {
   .background {
-    background-color: #f2f2f2;
+    background: #f2f2f2;
   }
   .container, .nav{
     width: 100%;
