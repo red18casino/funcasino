@@ -215,7 +215,7 @@ body{
  }
 
 @media only screen and (max-width: 800px) {
-  .container{
+  .container, .nav {
     width: 100%;
   }
 }
